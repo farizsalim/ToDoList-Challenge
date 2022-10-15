@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body{
+            background-color: #111827;
+        }
+    </style>
+    <title>ToDoList</title>
+</head>
+<body>
+    <section class="container bg-light my-5 py-2 rounded">
+        <h1>Task To Do List</h1>
+        <form id="dataId">
+            <!-- input nama -->
+            <div class="mb-3">
+                <label for="inputNama" class="form-label" required>Nama</label>
+                <input type="text" class="form-control" id="inputNama" name="inputNama" placeholder="Masukkan Nama">
+            </div>
+
+            <!-- input Email -->
+            <div class="mb-3">
+              <label for="inputEmail" class="form-label" required>Email address</label>
+              <input type="email" class="form-control" id="inputEmail" placeholder="Masukkan Email">
+            </div>
+
+            <!-- Kelompok -->
+            <div class="input-group mb-3">
+                <select class="custom-select" id="inputKelompok">
+                  <option selected>Choose...</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                </select>
+                <div class="input-group-append">
+                  <label class="input-group-text" for="inputKelompok">Kelompok</label>
+                </div>
+            </div>
+
+
+            <!-- Pilih role -->
+            <div class="input-group mb-3">
+                <select class="custom-select" id="inputRole">
+                  <option selected>Choose...</option>
+                  <option value="Project Manager">Project Manager</option>
+                  <option value="Desainer">Desainer</option>
+                  <option value="Coder">Coder</option>
+                </select>
+                <div class="input-group-append">
+                  <label class="input-group-text" for="inputRole">Role</label>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+    </section>
+
+    <section class="container bg-light my-5 py-2 rounded">
+        <table class="table table-hover table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Nama</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Kelompok</th>
+                    <th scope="col">Role</th>
+                    <th scope="col">Update</th>
+                </tr>
+            </thead>
+            <tbody id="data-masuk" >
+                    <!-- <tr>
+                        <th>Udin</th>
+                        <th>udin@gmail.com</th>
+                        <th>3</th>
+                        <th>Coder</th>
+                    </tr> -->
+            </tbody>
+        </table>
+    </section>
+
+
+
+
+
+
+
+<!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<!-- My script -->
+    <script src="script.js"></script>
+
+</body>
+</html>
